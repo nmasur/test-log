@@ -1,0 +1,10 @@
+name: "Test Shared Log"
+
+on:
+  push:
+
+jobs:
+  test-log:
+    uses: nmasur/actions/.github/workflows/test.yml@main
+    with:
+      text: "Hello, World!"
